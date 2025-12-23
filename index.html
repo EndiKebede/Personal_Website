@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GeoAI Lab</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top Navigation -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#">
+        <span class="brand-mark">◐</span>
+        <span class="brand-text">GeoAI4AUI</span>
+      </a>
+
+      <nav class="nav">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#team">Team</a>
+        <a class="nav-link" href="#research">Research</a>
+        <a class="nav-link" href="#publications">Publications</a>
+        <a class="nav-link" href="#opportunities">Opportunities</a>
+        <a class="nav-link" href="#news">News</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Open menu" onclick="document.body.classList.toggle('nav-open')">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home">
+    <section class="hero">
+      <!-- Replace hero.jpg with your image -->
+      <img class="hero-img" src="hero.jpg" alt="Lab hero image" />
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content container">
+        <h1 class="hero-title">Agri-Urban Interactions GeoAI Lab</h1>
+        <p class="hero-subtitle">
+          <span class="italic">Solutions for</span>
+          <span class="land"> Land</span>
+          <span class="italic"> &</span>
+          <span class="water"> Water</span>
+          <span class="italic"> Use Conflicts</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Intro / Welcome -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Welcome to the AUIGEO Lab @ The University of Oklahoma</h2>
+        <p class="lead">
+          We develop GeoAI methods to understand and support decision-making at the land–water–food–urban nexus.
+        </p>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Research</h3>
+            <p>Remote sensing, spatiotemporal ML, water scarcity, crop–urban interactions.</p>
+          </div>
+          <div class="card">
+            <h3>Data & Tools</h3>
+            <p>Open datasets, reproducible pipelines, interactive maps and models.</p>
+          </div>
+          <div class="card">
+            <h3>Collaboration</h3>
+            <p>We partner with academia, agencies, and industry to deliver impact.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Example Sections -->
+    <section id="team" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Team</h2>
+        <p>Add PI, students, collaborators, photos, and roles here.</p>
+      </div>
+    </section>
+
+    <section id="research" class="section">
+      <div class="container">
+        <h2 class="section-title">Research</h2>
+        <ul class="bullets">
+          <li>Urban expansion and agricultural water use</li>
+          <li>Crop ET modeling and climate risk</li>
+          <li>GeoAI for land–water conflict detection</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="publications" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Publications</h2>
+        <p>List publications with links (Google Scholar, DOI, PDF).</p>
+      </div>
+    </section>
+
+    <section id="opportunities" class="section">
+      <div class="container">
+        <h2 class="section-title">Opportunities</h2>
+        <p>Post openings, funded positions, how to apply.</p>
+      </div>
+    </section>
+
+    <section id="news" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">News</h2>
+        <p>Add announcements, awards, new papers, talks.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> GeoAI Lab · University of Oklahoma</p>
+        <p class="muted">Built with GitHub Pages</p>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
